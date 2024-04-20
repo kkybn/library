@@ -12,12 +12,21 @@ const myLibrary = [];
 
 //////////////////////////// FUNCTIONS //////////////////////////////////
 
-function Book(title, author, pages, read) {
+/*function Book(title, author, pages, read) {
     this.title = title,
     this.author = author,
     this.pages = pages,
     this.read = read
-};
+};*/
+
+class Book {
+    constructor(title, author, pages, read) {
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.read = read
+    }
+}
 
 function addBookToLib() {
     if (readBox.checked) {
@@ -135,3 +144,4 @@ const sample2 = new Book('Annihilation', 'Jeff VanderMeer', 208, true);
 myLibrary.push(sample1, sample2);
 
 displayBooks();
+
